@@ -29,3 +29,15 @@ newItem.addEventListener("click", function(){
 inventoryList.appendChild(newItem);
 };
 
+//Task 4: Business Customer Section - Handling Event Bubbling
+const customerCards = document.getElementsByClassName("customer-card");
+const customerSection = document.getElementById("customerSection");
+Array.from(customerCards).forEach(card=>{
+    card.addEventListener("click", (event) => {
+        console.log (`Customer card clicked`);
+        event.stopPropagation();
+    })
+})
+customerSection.addEventListener("click", (event)=>{
+    console.log(`User clicked customerSection`);
+});
