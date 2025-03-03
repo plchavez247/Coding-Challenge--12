@@ -14,3 +14,18 @@ metricCardArray.forEach(card =>{
     card.textContent += " - Updated";//updating inner test
     card.setAttribute("style", "background-color: lightblue;");//modifying style
 });
+
+//Task 3: Dynamic Inventory Management - Adding and Removing Items
+function addInventoryItem(itemName){
+const inventoryList = document.getElementById("inventoryList");
+const newItem = document.createElement("li")
+newItem.setAttribute("class", "product-item");
+newItem.setAttribute("id", itemName);// adding a class product-item and custom data attribute
+newItem.textContent = itemName;//updating text content
+newItem.addEventListener("click", function(){
+    inventoryList.removeChild(newItem);//removes item when "click"
+    console.log(`Removed item: ${itemName}`)//log the removmd item
+});
+inventoryList.appendChild(newItem);
+};
+
