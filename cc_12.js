@@ -12,5 +12,5 @@ const  metricCardList = document.querySelectorAll(".metric-card");// selecting a
 const metricCardArray = Array.from(metricCardList);//Array craeted using Nodelist
 metricCardArray.forEach(card =>{
     card.textContent += " - Updated";//updating inner test
-    card.setAttribute("style", "background color: lightblue;");//modifying style
+    card.setAttribute("style", "background-color: lightblue;");//modifying style
 });
