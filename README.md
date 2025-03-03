@@ -1,1 +1,1 @@
-This is my submission for coding challenge #12
+This is my submission for Coding Challenge #12
