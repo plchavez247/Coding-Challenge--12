@@ -34,8 +34,8 @@ const customerCards = document.getElementsByClassName("customer-card");
 const customerSection = document.getElementById("customerSection");
 Array.from(customerCards).forEach(card=>{
     card.addEventListener("click", (event) => {
-        console.log (`Customer card clicked`);
-        event.stopPropagation();
+        console.log (`Customer card clicked`);//log customer card clicked message
+        event.stopPropagation();//call stopPropagation
     })
 })
 customerSection.addEventListener("click", (event)=>{
